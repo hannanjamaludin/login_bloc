@@ -83,7 +83,7 @@ class LoginScreen extends StatelessWidget {
             ),
             onPressed: snapshot.hasData
                 ? () {
-                    print('Hi there!');
+                    bloc.submit();
                   }
                 : null,
             child: const Text('Login'),
